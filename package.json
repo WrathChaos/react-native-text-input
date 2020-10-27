@@ -1,8 +1,8 @@
 {
   "name": "@freakycoder/react-native-text-input",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Modern text input with fully customization options for React Native",
-  "main": "./build/dist/index.js",
+  "main": "./build/dist/RNTextInput.js",
   "repository": "git@github.com:WrathChaos/react-native-text-input.git",
   "author": "FreakyCoder <kurayogun@gmail.com>",
   "license": "MIT",
