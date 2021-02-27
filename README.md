@@ -23,7 +23,7 @@
     </td>
   </tr>
  <tr>
-    <td align="center"> 
+    <td align="center">
       <img alt="React Native Text Input" src="assets/Screenshots/react-native-text-input.png" width="686px"  />
     </td>
     <td align="center">
@@ -106,6 +106,7 @@ should work of the example project.
 | textInputStyle | TextStyle  |  default  | set or override the style object for the text input style              |
 | iconImageStyle | ImageStyle |  default  | set or override the style object for the image icon style              |
 | ImageComponent |   Image    |  default  | set your own component instead of default react-native Image component |
+| inputRef       | reference  | undefined | set the TextInput reference for the programmatic usage                 |
 
 ## Future Plans
 
