@@ -6,8 +6,7 @@ import {
   SafeAreaView,
   TouchableOpacity,
 } from "react-native";
-// import RNTextInput from "@freakycoder/react-native-text-input";
-import RNTextInput from "./lib/RNTextInput";
+import RNTextInput from "@freakycoder/react-native-text-input";
 
 const App = () => {
   let _inputRef: TextInput | null = null;
