@@ -7,7 +7,6 @@ import {
   ViewStyle,
   TextStyle,
   ImageStyle,
-  ViewProps,
   TextInputProps,
 } from "react-native";
 import RNBounceable, {
@@ -50,13 +49,18 @@ const RNTextInput: React.FC<IRNTextInputProps> = ({
   onPress,
   ...props
 }) => {
+  const [placeholderText, setPlaceholderText] = React.useState<string | undefined>(placeholder);
+    React.useEffect(() => {
+     setPlaceholderText(placeholder)
+    }, []);
+
   const renderContent = () => (
     <View style={styles.contentContainer}>
       <TextInput
         placeholderTextColor="#ead4ff"
         {...props}
         ref={inputRef}
-        placeholder={placeholder}
+        placeholder={placeholderText}
         style={[styles.textInputStyle, textInputStyle]}
       />
       {!disableButton && (
