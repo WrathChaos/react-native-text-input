@@ -107,6 +107,7 @@ should work of the example project.
 | iconImageStyle | ImageStyle |  default  | set or override the style object for the image icon style              |
 | ImageComponent |   Image    |  default  | set your own component instead of default react-native Image component |
 | inputRef       | reference  | undefined | set the TextInput reference for the programmatic usage                 |
+| iconComponent  |    any     | component | set your own icon component                                            |
 
 ## Future Plans
 

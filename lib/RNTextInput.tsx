@@ -34,6 +34,7 @@ interface IRNTextInputProps extends IRNBounceableProps, TextInputProps {
   iconImageStyle?: ImageStyle;
   disableButton?: boolean;
   style?: CustomStyleProp;
+  iconComponent: any;
   onPress?: () => void;
 }
 
@@ -42,6 +43,7 @@ const RNTextInput: React.FC<IRNTextInputProps> = ({
   inputRef,
   placeholder,
   buttonStyle,
+  iconComponent,
   textInputStyle,
   iconImageStyle,
   disableButton = false,
@@ -49,10 +51,12 @@ const RNTextInput: React.FC<IRNTextInputProps> = ({
   onPress,
   ...props
 }) => {
-  const [placeholderText, setPlaceholderText] = React.useState<string | undefined>(placeholder);
-    React.useEffect(() => {
-     setPlaceholderText(placeholder)
-    }, []);
+  const [placeholderText, setPlaceholderText] = React.useState<
+    string | undefined
+  >(placeholder);
+  React.useEffect(() => {
+    setPlaceholderText(placeholder);
+  }, []);
 
   const renderContent = () => (
     <View style={styles.contentContainer}>
@@ -63,7 +67,7 @@ const RNTextInput: React.FC<IRNTextInputProps> = ({
         placeholder={placeholderText}
         style={[styles.textInputStyle, textInputStyle]}
       />
-      {!disableButton && (
+      {(!disableButton && iconComponent) || (
         <RNBounceable style={[styles.buttonStyle, buttonStyle]}>
           <ImageComponent
             source={defaultArrowIcon}
