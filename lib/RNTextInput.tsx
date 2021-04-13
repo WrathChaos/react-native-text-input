@@ -28,13 +28,13 @@ export interface ISource {
 interface IRNTextInputProps extends IRNBounceableProps, TextInputProps {
   inputRef?: any;
   ImageComponent?: any;
+  iconComponent?: any;
   placeholder?: string;
+  disableButton?: boolean;
   buttonStyle?: ViewStyle;
   textInputStyle?: TextStyle;
   iconImageStyle?: ImageStyle;
-  disableButton?: boolean;
   style?: CustomStyleProp;
-  iconComponent: any;
   onPress?: () => void;
 }
 
