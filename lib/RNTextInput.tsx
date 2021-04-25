@@ -21,10 +21,6 @@ const defaultArrowIcon = require("./local-assets/right-arrow.png");
 
 type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 
-export interface ISource {
-  source: string | { uri: string };
-}
-
 interface IRNTextInputProps extends IRNBounceableProps, TextInputProps {
   inputRef?: any;
   ImageComponent?: any;
