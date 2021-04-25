@@ -733,10 +733,10 @@
   "resolved" "https://registry.npmjs.org/@freakycoder/react-native-bounceable/-/react-native-bounceable-0.2.4.tgz"
   "version" "0.2.4"
 
-"@freakycoder/react-native-text-input@^0.1.2":
-  "integrity" "sha512-8UBJw1Cd7DX7IpC5CmUWGZ53/+IrDBBYFcHtEth7u7F6Qr75fAdNHpeRgl/CFJZN5KUEqoZsSy1/b0vLjrVBbw=="
-  "resolved" "https://registry.npmjs.org/@freakycoder/react-native-text-input/-/react-native-text-input-0.1.2.tgz"
-  "version" "0.1.2"
+"@freakycoder/react-native-text-input@^0.1.7":
+  "integrity" "sha512-DizfEaT5XTXkHDgl54u9sMrmrxAL6KnPxK31UJVk437v4tYBN9mM/YdkR0lwc+4I6VILLjX9FuA4eqrQqaRHCA=="
+  "resolved" "https://registry.npmjs.org/@freakycoder/react-native-text-input/-/react-native-text-input-0.1.7.tgz"
+  "version" "0.1.7"
 
 "@hapi/address@2.x.x":
   "integrity" "sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ=="
