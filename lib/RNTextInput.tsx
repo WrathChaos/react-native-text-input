@@ -63,14 +63,15 @@ const RNTextInput: React.FC<IRNTextInputProps> = ({
         placeholder={placeholderText}
         style={[styles.textInputStyle, textInputStyle]}
       />
-      {(!disableButton && iconComponent) || (
-        <RNBounceable style={[styles.buttonStyle, buttonStyle]}>
-          <ImageComponent
-            source={defaultArrowIcon}
-            style={[styles.iconImageStyle, iconImageStyle]}
-          />
-        </RNBounceable>
-      )}
+      {!disableButton &&
+        (iconComponent || (
+          <RNBounceable style={[styles.buttonStyle, buttonStyle]}>
+            <ImageComponent
+              source={defaultArrowIcon}
+              style={[styles.iconImageStyle, iconImageStyle]}
+            />
+          </RNBounceable>
+        ))}
     </View>
   );
 
