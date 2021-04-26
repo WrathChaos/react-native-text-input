@@ -44,6 +44,7 @@ const App = () => {
         <RNTextInput
           inputRef={(ref: any) => (_inputRef = ref)}
           placeholder="E-mail"
+          disableButton
           onChangeText={(text: string) => console.log("Text: ", text)}
           onPress={() => _inputRef?.focus()}
         />
